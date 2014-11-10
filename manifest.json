@@ -1,7 +1,11 @@
 {
-	"name": "TiebaAddin",
+	"manifest_version": 2,
+	"name": "zIndexhelper",
 	"version": "1.0",
-	"description": "An addin for Tieba.",
-	"browser_action": {"default_icon": "icon.png"},
-	"permissions": "[http://*/*]"
+	"description": "An Zindex Helper",
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": ["http://*/*"]
 }
