@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+<style>
+	div{width: 100%;height: 100%;position: absolute;left: 0;top: 0;border: solid 1px silver;display: block;}
+	#d1{background: #223123;z-index: 1;}
+	#d1{background: #aaee11;z-index: 2;}
+</style>
+</head>
+<body>
+	<div id="d1">1</div>
+	<div id="d2">2</div>
+</body>
+</html>
+
+<script>
+window.onload = function(){
+	document.children[0].style.background="rgba(0,0,0,.5)";
+	document.body.setAttribute("style","transform:skew(0,-45deg) scale(0.6,0.6);");
+}
+</script>
